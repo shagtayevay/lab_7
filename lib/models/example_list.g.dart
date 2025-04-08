@@ -1,19 +1,20 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'get_posts.dart';
+part of 'example_list.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Post _$PostFromJson(Map<String, dynamic> json) => Post(
+ExampleList _$ExampleListFromJson(Map<String, dynamic> json) => ExampleList(
       userId: (json['userId'] as num).toInt(),
       id: (json['id'] as num).toInt(),
       title: json['title'] as String,
       body: json['body'] as String,
     );
 
-Map<String, dynamic> _$PostToJson(Post instance) => <String, dynamic>{
+Map<String, dynamic> _$ExampleListToJson(ExampleList instance) =>
+    <String, dynamic>{
       'userId': instance.userId,
       'id': instance.id,
       'title': instance.title,

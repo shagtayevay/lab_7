@@ -1,21 +1,22 @@
 import 'package:json_annotation/json_annotation.dart'; // Required for JSON serialization
 
-part 'get_posts.g.dart'; // Must match your filename: get_posts.dart → get_posts.g.dart
+part 'profile.g.dart';
 
 @JsonSerializable()
-class Post {
+class Profile {
   final int userId;
   final int id;
   final String title;
   final String body;
 
-  Post({
+  Profile({
     required this.userId,
     required this.id,
     required this.title,
     required this.body,
   });
 
-  factory Post.fromJson(Map<String, dynamic> json) => _$PostFromJson(json);
-  Map<String, dynamic> toJson() => _$PostToJson(this);
+  factory Profile.fromJson(Map<String, dynamic> json) =>
+      _$ProfileFromJson(json);
+  Map<String, dynamic> toJson() => _$ProfileToJson(this);
 }
